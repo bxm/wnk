@@ -14,7 +14,7 @@ create_symlinks () {
   mkdir -p "${TARGET}" || return 1
 
   if [ "${PURGE}" = true ] ; then eval rm -f "${TARGET}/${MATCH}" ; fi
-  find "${SOURCE}" -maxdepth 1 -type f -name "${MATCH}" -exec ln -sf "{}" "${TARGET}" ';' 
+  find "${SOURCE}" -maxdepth 1 -type f -name "${MATCH}" -exec ln -sf "{}" "${TARGET}" ';'
   unset SOURCE TARGET MATCH PURGE
 }
 
