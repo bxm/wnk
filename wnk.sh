@@ -30,7 +30,6 @@ create_list () {
 
 }
 
-
 PURGE=true SOURCE=/tmp/repo  TARGET=${SOURCE}_links create_symlinks || exit 1
            SOURCE=/tmp/repo1 TARGET=${SOURCE}_links create_symlinks || exit 1
 
