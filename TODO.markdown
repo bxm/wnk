@@ -37,3 +37,4 @@ recovery
 
 to consider
   - copying symlinks and repo data should be quicker than recreating, but doesn't lend it self to a rebuild
+  - limit repo contents to X previous versions to limit meta data size?
